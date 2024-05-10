@@ -1,0 +1,18 @@
+@use '../../utils' as *;
+
+.fs-100{
+    font-size: 100px;
+    @media #{$xl} {
+        font-size: 80px;
+    }
+}
+.tpform-title{
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--tp-common-black);
+}
+.tpcontact-form-box{
+    & input, & textarea{
+        border-color: var(--tp-body-color);
+    }
+}

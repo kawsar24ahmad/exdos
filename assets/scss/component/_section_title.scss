@@ -1,0 +1,11 @@
+@use '../utils' as *;
+
+.tp-section-title {
+	font-size: 60px;
+	@media #{$lg} {
+		font-size: 54px;
+	}
+	&-white{
+		color: #fff;
+	}
+}

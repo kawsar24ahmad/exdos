@@ -1,0 +1,25 @@
+@use '../../utils' as *;
+.custom-row{
+    display: flex;
+    justify-content: space-between;
+}
+.tpfact{
+    &__icon{
+
+    }
+    &__text{
+        & span{
+            font-size: 100px;
+            line-height: 110px;
+            color: #FFFFFF;
+            display: inline-block;
+
+        }
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 40px;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+}

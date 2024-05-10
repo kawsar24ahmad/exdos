@@ -1,0 +1,46 @@
+@use '../../utils' as *;
+
+.tp-project-tab{
+    & button{
+        font-family: var(--tp-font-heading);
+        font-size: 100px;
+        line-height: 1.2;
+        font-style: normal;
+        font-weight: 400;
+        color: #FFFFFF;
+        display: block;
+        border-bottom: 1px solid  #2f446b ;
+        padding-left: 110px;
+        padding-right: 30px;
+        padding-top: 10px;
+        @media #{$xxlm}{
+            font-size: 80px;
+        }
+        @media #{$xl}{
+            font-size: 60px;
+            padding-left: 80px;
+        }
+        @media #{$lg}{
+            font-size: 44px;
+            padding-left: 40px;
+        }
+
+        &.active{
+            color: var(--tp-theme-color-2);
+            border-bottom: 1px solid   var(--tp-theme-color-2) ;
+
+        }
+    }
+    &-thumb{
+        padding-left: 20px;
+        padding-right: 100px;
+        & img{
+            @media #{$xxlm} {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+

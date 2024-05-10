@@ -1,0 +1,79 @@
+@use '../../utils' as *;
+.tpteam{
+    &-thum{
+        & a{
+            & img{
+                border-radius: 15px;
+            }
+        }
+    }
+    &-info{
+        & h3{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 40px;
+            padding-left: 80px;
+            padding-top: 40px;
+            @media #{$xxlm,$xl} {
+                padding-left: 0;
+            }
+            @media #{$xl, $lg} {
+                font-size: 25px;
+            }
+            @media #{ $lg} {
+               padding-left: 10px;
+            }
+        }
+        & span{
+            font-size: 17px;
+            padding-left: 135px;
+            padding-bottom: 30px;
+            display: inline-block;
+            @media #{$xxlm} {
+                padding-left:70px;
+            }
+            @media #{$xl} {
+                padding-left:25px;
+            }
+            @media #{$lg} {
+                padding-left:35px;
+            }
+            & i{
+                height: 1px;
+                width: 60px;
+                display: inline-block;
+                background-color: #D6D6D1;
+                transform: translateY(-4px);
+                padding-right: 10px;
+                
+            }
+        }
+        
+    }
+    &-social{
+        padding-left: 80px;
+
+        & a{
+            font-size: 25px;
+            line-height: 30px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+}
+.tp-team-slider-btn{
+    & span{
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        background-color: #000;
+        border-radius: 100%;
+        margin: 0 10px;
+    }
+    & .tp-team-swiper-button{
+        display: inline-block;
+    }
+}
+
+

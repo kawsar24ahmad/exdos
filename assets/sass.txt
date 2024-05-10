@@ -1,0 +1,1 @@
+sass --watch F:\aCourseEvanto\exdos\assets\scss\main.scss:F:\aCourseEvanto\exdos\assets\css\style.css

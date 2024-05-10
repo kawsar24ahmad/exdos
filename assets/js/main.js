@@ -1,0 +1,86 @@
+(function($){
+        "use strict";
+
+        $("[data-background]").each(function(){
+          $(this).css("background-image", "url("+$(this).attr("data-background")+")")
+        })
+
+        //  Initialize Swiper 
+   
+          var swiper = new Swiper(".tp-testimonial-active", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            keyboard: {
+              enabled: true,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".tp-swiper-test-button-next",
+              prevEl: ".tp-swiper-test-button-prev",
+            },
+          });
+  
+          // brand slider top
+          var swiper = new Swiper(".tp-brand-top-active", {
+            slidesPerView: 'auto',
+            spaceBetween: 80,
+            centeredSlides: true,
+            loop:true,
+            freemode:true,
+            speed:4000,
+            allowTouchMove:false,
+            autoplay: {
+              delay: 1,
+              disableOnInteraction: true,
+            },
+            
+          });
+          // brand slider bottom
+          var swiper = new Swiper(".tp-brand-bottom-active", {
+            slidesPerView: 'auto',
+            spaceBetween: 80,
+            centeredSlides: true,
+            loop:true,
+            freemode:true,
+            speed:4000,
+            allowTouchMove:false,
+            autoplay: {
+              delay: 1,
+              disableOnInteraction: true,
+            },
+            
+          });
+
+          // team slider 
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            keyboard: {
+              enabled: true,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".tp-team-swiper-button-next",
+              prevEl: ".tp-team-swiper-button-prev",
+            },
+            breakpoints: {
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              992: {
+                slidesPerView: 3,
+              },
+              1200: {
+                slidesPerView: 4,
+              },
+            },
+          });
+         
+})(jQuery);

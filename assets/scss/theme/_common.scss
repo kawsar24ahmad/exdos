@@ -1,0 +1,77 @@
+@use '../utils' as *;
+
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+img{
+	max-width: 100%;
+}
+
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+
+.z-index-1{
+	z-index: 1;
+}
+
+.z-index-11{
+	z-index: 11;
+}
+
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.overflow-x-visible{
+	overflow-x: visible;
+	overflow-y: hidden;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+.tp-black-bg{
+	background-color: var(--tp-common-black);
+}
+.tp-blue-bg{
+	background-color: var(--tp-theme-color);
+}
+.tp-nblue-bg{
+	background-color: var( --tp-body-nblou-color);
+}
+.tp-yellow-bg{
+	background-color: var(  --tp-theme-color-2);
+}
+.tp-cream-bg{
+	background-color: var(  --tp-cream );
+}
+.tp-theme-black-bg{
+	background-color: var( --tp-heading-color );
+}
+
+.br-24{
+	border-radius: 24px;
+}
+.tp-brand-slide-element{
+	width: auto;
+	display: inline-block;
+}
+.tp-slide-transition{
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}

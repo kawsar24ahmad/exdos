@@ -1,0 +1,48 @@
+@use '../../utils' as *;
+
+.tp-about-right{
+    @media #{$xl} {
+        padding-left: 10px;
+    }
+    @media #{$lg} {
+        padding-left: 0;
+    }
+}
+.tp-about-video{
+    @media #{$xl} {
+        padding-left: 10px;
+    }
+    @media #{$lg} {
+        padding-left: 0;
+    }
+    &-icon{
+        & a{
+            width: 80px;
+            height: 80px;
+            border: 1px solid #57595C;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 80px;
+            color: #0A0E1A;
+            display: inline-block;
+        }
+        & h4{
+            font-size: 30px;
+        }
+    }
+}
+.tp-about-shape-1 {
+    top: 30%;
+    left: 40px;
+    z-index: 1;
+}
+.tp-about-shape-2 {
+    top: 42%;
+    z-index: 1;
+    left: 37%;
+}
+.tp-about-shape-3 {
+    top: 30%;
+    z-index: 1;
+    right: 0;
+}
