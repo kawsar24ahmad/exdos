@@ -9,7 +9,13 @@
     @media #{$xl}{
         padding: 50px 20px;
     }
-
+    &__icon{
+        & i {
+            display: inline-flex;
+            font-size: 92px;
+            color: var(--tp-common-black);
+        }
+    }
     &__title{
         font-family: 'Federo';
         font-style: normal;

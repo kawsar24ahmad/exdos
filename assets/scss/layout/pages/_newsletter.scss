@@ -8,7 +8,10 @@
     &-bg{
         padding: 80px;
         border-radius: 20px;
-        
+        @media #{$md} {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
     &-back{
         line-height: 1;
@@ -24,6 +27,12 @@
             font-size:60px;
             bottom: -37px;
             left: 80;
+        }
+        @media #{$md} {
+            font-size:60px;
+            top: 40%;
+            bottom: inherit;
+            left: 80px;
         }
     }
     &-box{

@@ -19,6 +19,9 @@
         font-size: 70px;
        }
        @media #{$lg} {
+        font-size: 60px;
+       }
+       @media #{$md} {
         font-size: 50px;
        }
 
@@ -55,7 +58,8 @@
     top: 30%;
     left:-100px;
     z-index: 9;
-    @media #{$xxlm,$xl} {
+    font-size: 52px;
+    @media #{$xxlm,$xl, $md} {
         top: inherit;
         bottom: 0;
         left: 0;
@@ -63,10 +67,13 @@
     @media #{$lg} {
         left: 0;
     }
+    &-prev{
+        
+    }
     &-next{
         left: auto;
         right: -100px;
-        @media #{$xxlm, $xl} {
+        @media #{$xxlm, $xl, $md} {
             right: inherit;
             left: 100px;
             bottom: 0;
@@ -76,6 +83,9 @@
             right: 0;
         }
     }
+}
+.tp-rot-180{
+    transform: rotate(180deg);
 }
 .tptestimonial-thum{
     &-1{

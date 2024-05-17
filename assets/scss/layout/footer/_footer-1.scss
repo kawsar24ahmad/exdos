@@ -7,6 +7,9 @@
 .tpfooter-social{
     color: #fff;
     opacity: .6;
+    @media #{$md} {
+        padding-left: 0;
+    }
     & a{
         margin-left: 20px;
         font-size: 25px;
@@ -17,6 +20,10 @@
 
 }
 .tpfooter-widget{
+    @media #{$md} {
+        padding-left: 20px;
+        padding-right: 0;
+    }
     &-title{
         color: #FFFFFF;
         font-size: 20px;
@@ -28,6 +35,7 @@
         line-height: 28px;
     }
     & ul {
+        list-style: none;
         & li{
             margin-bottom: 10px;
             & a{
@@ -48,7 +56,10 @@
         color: #FFFFFF;
         font-size: 30px;
         line-height: 40px;
-        @media #{$xl} {
+        @media #{$xl, $lg} {
+            font-size: 22px;
+        }
+        @media #{$md} {
             font-size: 18px;
         }
     }
@@ -65,12 +76,16 @@
             color: var(--tp-theme-color-2);
         }
     }
-    & .tpfooter-links{
+    & .tpfooter-menu{
        
         & ul{
-            list-style: none;
+            
             display: flex;
             justify-content: end;
+            @media #{$md} {
+                justify-content: center;
+            }
+            list-style: none;
             & li{
                 margin-left: 30px;
                 padding-left: 30px;
@@ -85,6 +100,8 @@
                     top: 8px;
                 }
                 &:first-child{
+                    margin-left: 0;
+                    padding-left: 0;
                     &::before{
                         display: none;
                     }
@@ -110,7 +127,9 @@
         left: 905px;
         z-index: 1;
   
-
+        @media #{$md} {
+            display: none;
+        }
     }
     &-3{
         bottom: 63px;

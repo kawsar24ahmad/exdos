@@ -1,6 +1,11 @@
 @use '../../utils' as *;
 
 .tpblog{
+    &__content{
+        @media  #{$lg,$md} {
+            margin-left: 0;
+        }
+    }
     &__thumb{
         & img{
             border-radius: 20px;
@@ -11,6 +16,9 @@
             font-size: 30px;
             line-height: 40px;
             color: #0A0E1A;
+            @media  #{$lg} {
+               font-size: 25px;
+            }
         }
     }
     &__meta{

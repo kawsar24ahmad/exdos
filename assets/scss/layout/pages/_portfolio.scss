@@ -1,6 +1,10 @@
 @use '../../utils' as *;
 
 .tp-project-tab{
+    @media #{$md} {
+        display: flex;
+        justify-content: center;
+    }
     & button{
         font-family: var(--tp-font-heading);
         font-size: 100px;
@@ -24,6 +28,12 @@
             font-size: 44px;
             padding-left: 40px;
         }
+        @media #{$md}{
+            font-size: 17px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            display: inline-flex;
+        }
 
         &.active{
             color: var(--tp-theme-color-2);
@@ -34,8 +44,12 @@
     &-thumb{
         padding-left: 20px;
         padding-right: 100px;
+        @media #{$md} {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
         & img{
-            @media #{$xxlm} {
+            @media #{$xxlm,$md} {
                 width: 100%;
             }
         }

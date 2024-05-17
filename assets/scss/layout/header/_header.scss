@@ -5,13 +5,13 @@
 	top: 0;
 	left: 0;
 	right: 0; 
-    z-index: 2;
+    z-index: 99;
 }
 .tp-header-area{
     @media #{$xl} {
         padding-left: 30px;
     }
-    @media #{$lg} {
+    @media #{$lg, $md} {
         padding-left: 40px;
     }
 }
@@ -37,6 +37,25 @@
                 color: #fff;
                 padding: 30px 0;
                 display: inline-block;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: "\f118";
+                    font-family: var(--tp-font-flaction);
+                    color: var(--tp-theme-color-2);
+                    font-size: 40px;
+                    left: 26px;
+                    top: 0;
+                    transform: rotate(133deg);
+                    opacity: 0;
+                    transition: .3s;
+                }
+                &:hover{
+                    &::before{
+                        opacity: 1;
+                        top: 5px;
+                    } 
+                }
             }
             
             & .sub-menu{
@@ -56,6 +75,9 @@
                         color: #000;
                         padding: 4px 25px;
                         font-size: 17px;
+                        &::before{
+                            display: none;
+                        }
                     }
                     
                     &  .sub-menu{
@@ -85,6 +107,7 @@
                     visibility: visible;
                     top: 100%;
                 }
+                
             }
         }
     }

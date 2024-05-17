@@ -2,10 +2,17 @@
 .custom-row{
     display: flex;
     justify-content: space-between;
+    @media #{$md} {
+        flex-wrap: wrap;
+    }
 }
 .tpfact{
     &__icon{
-
+        & span{
+            font-size: 110px;
+            display: inline-flex;
+            color: var(--tp-theme-color-2);
+        }
     }
     &__text{
         & span{
@@ -21,5 +28,10 @@
         line-height: 40px;
         color: #FFFFFF;
         opacity: 0.5;
+    }
+}
+.cols{
+    @media #{$md} {
+        width: 50%;
     }
 }

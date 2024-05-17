@@ -70,7 +70,7 @@
               prevEl: ".tp-team-swiper-button-prev",
             },
             breakpoints: {
-              640: {
+              768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },

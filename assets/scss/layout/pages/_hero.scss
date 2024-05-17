@@ -14,6 +14,9 @@
         @media #{$lg} {
             font-size: 75px;
         }
+        @media #{$md} {
+            font-size: 65px;
+        }
         text-transform: uppercase; 
         font-weight: 400;
         margin: 0;
@@ -81,11 +84,20 @@
 	right: 300px;
 	bottom: 130px;
     z-index: 1;
+    @media #{$md} {
+        right: 100px;
+        bottom: 100px;
+        max-width:  50%;
+    }
 }
 .tp-hero-shape-5 {
 	right: 190px;
 	top: 210px;
     z-index: 1;
+    @media #{$md} {
+        right: 0;
+        top: 100px;
+    }
 }
 
 
