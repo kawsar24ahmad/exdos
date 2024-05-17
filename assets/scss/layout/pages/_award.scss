@@ -3,11 +3,19 @@
 .tpaward{
     &-wrapper{
         padding-right: 50px;
+        @media #{$xs} {
+            padding-right: 0;
+        }
         & .row{
+            
             & .col-md-6:nth-child(even) {
                 & .tpaward{
                     border-left: 1px solid #57595C;
                     padding-left: 56px;
+                    @media #{$xs} {
+                        border-left: 0;
+                        padding-left: 0;
+                    }
                 }
             }
             & .col-md-6:nth-child(1) {
@@ -23,14 +31,22 @@
             & .col-md-6.col-md-6:nth-last-child(-n+2) {
                 & .tpaward{
                     padding-bottom: 0;
-                    border-bottom: 0;                    
+                    border-bottom: 0; 
+                    @media #{$xs} {
+                        padding-bottom: 35px;
+                        border-bottom: 1px solid #57595C;
+                    }                   
                 }
             }
+            
         }
     }
     padding: 35px 0;
-
+    
     border-bottom: 1px solid #57595C;
+    @media #{$xs} {
+        padding-top: 35px !important;
+    }
     & span{
         color: var(--tp-body-color);
         font-size: 20px;

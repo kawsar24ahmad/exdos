@@ -12,6 +12,10 @@
             padding-left: 40px;
             padding-right: 40px;
         }
+        @media #{$xs} {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
     &-back{
         line-height: 1;
@@ -56,10 +60,17 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: end;
+            @media #{$xs} {
+                display: block;
+            }
         }
     }
     &-input{
         width:calc(100% - 221px);
+        @media #{$xs} {
+            width: 100%;
+            margin-bottom: 30px;
+        }
         & img{
             position: absolute;
             right: 20px;

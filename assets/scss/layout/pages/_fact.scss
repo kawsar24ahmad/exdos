@@ -2,8 +2,11 @@
 .custom-row{
     display: flex;
     justify-content: space-between;
-    @media #{$md} {
+    @media #{$md,$xs} {
         flex-wrap: wrap;
+    }
+    @media #{$xs} {
+        justify-content: center;
     }
 }
 .tpfact{
@@ -31,7 +34,7 @@
     }
 }
 .cols{
-    @media #{$md} {
+    @media #{$md,$sm} {
         width: 50%;
     }
 }

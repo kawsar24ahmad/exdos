@@ -30,6 +30,9 @@
 		border: 1px solid #FFFFFF;
 		padding: 45px 75px;
 		border-radius: 100%;
+		@media #{$xs} {
+			font-size: 30px;
+		}
 	}
 }
 .tp-text-btn{

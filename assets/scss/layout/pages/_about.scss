@@ -1,19 +1,28 @@
 @use '../../utils' as *;
 
+.tp-about-img{
+    & img{
+        border-radius: 20px;
+    }
+}
 .tp-about-right{
     @media #{$xl} {
         padding-left: 10px;
     }
-    @media #{$lg,$md} {
+    @media #{$lg,$md,$xs} {
         padding-left: 0;
     }
+   
 }
 .tp-about-video{
     @media #{$xl} {
         padding-left: 10px;
     }
-    @media #{$lg, $md} {
+    @media #{$lg,$xs} {
         padding-left: 0;
+    }
+    @media #{$xs} {
+        padding-top: 30px;
     }
     &-icon{
         & a{
@@ -28,6 +37,7 @@
         }
         & h4{
             font-size: 30px;
+           
         }
     }
 }

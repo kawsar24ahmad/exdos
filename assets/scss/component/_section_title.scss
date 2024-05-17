@@ -8,7 +8,17 @@
 	@media #{$md} {
 		font-size: 35px;
 	}
+	@media #{$xs} {
+		font-size: 35px;
+	}
 	&-white{
 		color: #fff;
+	}
+	&-wrapper{
+		& br{
+			@media #{$xs} {
+				display: none;
+			}
+		}
 	}
 }

@@ -4,6 +4,12 @@
     @media #{$xxlm} {
         margin-left: 90px;
     }
+    &-area{
+        @media #{$sm,$xs} {
+            padding-top: 170px;
+            padding-bottom: 100px;
+        }
+    }
     &-title{
         
         color: #FFF;
@@ -17,6 +23,9 @@
         @media #{$md} {
             font-size: 65px;
         }
+        @media #{$xs} {
+            font-size: 45px;
+        }
         text-transform: uppercase; 
         font-weight: 400;
         margin: 0;
@@ -29,6 +38,9 @@
         & i{
             color: #B1B4BA;
             font-size: 30px;
+            @media #{$xs} {
+                font-size: 18px;
+            }
            font-style: normal;
            display: inline-block;
            margin-right: 45px;
@@ -69,22 +81,33 @@
         width: 25%;
         top: 40%;
     }
+    @media #{$sm} {
+        width: 25%;
+        top: 20%;
+    }
 }
 .tp-hero-shape-1 {
 	left: -50px;
 	top: 357px;
     z-index: 1;
+    @media #{$sm,$xs} {
+        display: none;
+    }
 }
 .tp-hero-shape-3 {
 	left: 57%;
 	top: 32%;
     z-index: 1;
+    @media #{$sm,$xs} {
+        left: inherit;
+        right: 0;
+    }
 }
 .tp-hero-shape-4{
 	right: 300px;
 	bottom: 130px;
     z-index: 1;
-    @media #{$md} {
+    @media #{$md,$sm,$xs} {
         right: 100px;
         bottom: 100px;
         max-width:  50%;

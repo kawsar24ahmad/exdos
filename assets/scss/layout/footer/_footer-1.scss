@@ -7,7 +7,7 @@
 .tpfooter-social{
     color: #fff;
     opacity: .6;
-    @media #{$md} {
+    @media #{$md,$xs} {
         padding-left: 0;
     }
     & a{
@@ -21,6 +21,10 @@
 }
 .tpfooter-widget{
     @media #{$md} {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    @media #{$xs} {
         padding-left: 20px;
         padding-right: 0;
     }
@@ -59,13 +63,16 @@
         @media #{$xl, $lg} {
             font-size: 22px;
         }
-        @media #{$md} {
+        @media #{$md,$xs} {
             font-size: 18px;
         }
     }
 }
 .right-border{
     border-right: 1px solid rgba(255,255,255, 0.6);
+    @media #{$xs} {
+        border-right:none; 
+    }
 }
 .tpfooter-copyright-area{
     & p{
@@ -82,14 +89,22 @@
             
             display: flex;
             justify-content: end;
+            flex-wrap: wrap;
             @media #{$md} {
                 justify-content: center;
+            }
+            @media #{$xs} {
+                justify-content: start;
             }
             list-style: none;
             & li{
                 margin-left: 30px;
                 padding-left: 30px;
                 position: relative;
+                @media #{$xs} {
+                    margin-left: 15px;
+                    padding-left: 15px;
+                }
                 &::before{
                     content: "";
                     height: 12px;

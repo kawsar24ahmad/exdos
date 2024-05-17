@@ -24,11 +24,19 @@
        @media #{$md} {
         font-size: 50px;
        }
+       @media #{$xs} {
+        font-size: 30px;
+        padding: 0 20px;
+       }
 
     }
 
 
-      
+      &-author{
+        @media #{$xs} {
+            padding-top: 50px;
+        }
+      }
        
     &-name{
         color: var( --tp-heading-color);
@@ -66,6 +74,11 @@
     }
     @media #{$lg} {
         left: 0;
+    }
+    @media #{$xs} {
+        position: static;
+        display: inline-flex;
+        margin-top: 20px;
     }
     &-prev{
         

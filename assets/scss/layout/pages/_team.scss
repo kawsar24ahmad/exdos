@@ -1,7 +1,7 @@
 @use '../../utils' as *;
 .tpteam{
     &-area{
-        @media #{$md} {
+        @media #{$md,$xs} {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -24,7 +24,7 @@
             @media #{$xxlm,$xl} {
                 padding-left: 0;
             }
-            @media #{$xl, $lg, $md} {
+            @media #{$xl, $lg, $md,$sm} {
                 font-size: 25px;
             }
             @media #{ $lg} {
@@ -33,6 +33,10 @@
             @media #{ $md} {
                padding-left: 40px;
             }
+            @media #{ $sm} {
+               padding-left: 20px;
+            }
+           
         }
         & span{
             font-size: 17px;
@@ -51,6 +55,10 @@
             @media #{$md} {
                 padding-left: 80px;
             }
+            @media #{$sm} {
+                padding-left: 40px;
+            }
+           
             & i{
                 height: 1px;
                 width: 60px;
@@ -71,6 +79,10 @@
         @media #{$md} {
             padding-left: 40px;
         }
+        @media #{$xs} {
+            padding-left: 20px;
+        }
+        
 
         & a{
             font-size: 25px;
@@ -81,6 +93,7 @@
     }
 }
 .tp-team-slider-btn{
+    margin-bottom: 20px;
     & span{
         display: inline-flex;
         height: 10px;
