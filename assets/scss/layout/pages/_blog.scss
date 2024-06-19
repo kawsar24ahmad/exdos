@@ -8,7 +8,6 @@
     }
     &__thumb{
         & img{
-            border-radius: 20px;
             width: 100%;
         }
     }
@@ -38,6 +37,20 @@
             display: inline-flex;
             align-items: center;
             margin: 0 15px;
+        }
+    }
+    &-2{
+        border: 1px solid #57595C;
+        border-left: 0;
+        border-radius: 10px;
+        .tpblog__thumb{
+            & img{
+                height: calc(100% + 24px);
+                transform: translateY(-12px);
+                object-fit: cover;
+            }
+            flex: 0 0 auto;
+           
         }
     }
    

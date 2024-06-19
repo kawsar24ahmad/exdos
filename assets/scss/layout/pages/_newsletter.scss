@@ -77,5 +77,30 @@
             top: 22%;
             line-height: 26px;
         }
+        & i{
+            position: absolute;
+            right: 20px;
+            top: 22%;
+            line-height: 26px;
+            color: #57595C;
+        }
     }
+    &-box-2{
+        & input{
+            color: #57595C;
+            border-color: #57595C;
+  
+            @include tp-placeholder{
+                color:#57595C;
+            }
+            &:focus{
+                border-color: #57595C;
+            }
+        }
+        & .tp-newsletter-back{
+            color: #EEEBE6;
+            opacity: 1;
+        }
+    }
+
 }

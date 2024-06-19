@@ -91,6 +91,53 @@
             margin-right: 20px;
         }
     }
+    &-2{
+        &:hover{
+            & .tpteam-thumb .social-icons{
+                display: flex;
+            }
+            & .tpteam-info h3{
+                color: #0057FC;
+            }
+        }
+        & .tpteam-thumb{
+            
+            img{
+                border-radius: 15px;
+            }
+            & .social-icons{
+                display: none;
+                justify-content: center;
+                align-items: center;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+               &-wrapper{
+                
+                & i{
+                    font-size: 22px;
+                    padding: 10px;
+                    margin: 5px;
+                    background-color: #FFFFFf;
+                    border-radius: 30px;
+                }
+               }
+            }
+        }
+        & .tpteam-info{
+            & span{
+                padding: 0;
+                padding-top: 32px;
+                padding-bottom: 15px;
+            }
+            & a{
+                & h3{
+                    padding: 0;
+                }
+            }
+        }
+    }
 }
 .tp-team-slider-btn{
     margin-bottom: 20px;

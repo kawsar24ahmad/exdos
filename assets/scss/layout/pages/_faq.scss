@@ -1,0 +1,26 @@
+@use '../../utils' as *;
+
+
+.tp-faq-area{
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.accordion{
+    & .accordionItem{
+        border: 1px solid #57595C;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        & h2{
+            font-size: 20px;
+            padding: 23px 30px;
+            margin: 0;
+           
+        }
+        & .accordionBody{
+            margin: 0 30px;
+            padding: 20px 0;
+            border-top:1px solid #57595C;
+        }
+    }
+}

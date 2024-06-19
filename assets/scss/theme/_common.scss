@@ -51,7 +51,7 @@ img{
 .tp-blue-bg{
 	background-color: var(--tp-theme-color);
 }
-.tp-nblue-bg{
+.tp-nblue-bg{ 
 	background-color: var( --tp-body-nblou-color);
 }
 .tp-yellow-bg{
@@ -67,6 +67,18 @@ img{
 .br-24{
 	border-radius: 24px;
 }
+.br{
+	&-15{
+		& img{
+			border-radius: 15px;
+		}
+	}
+	&-20{
+		& img{
+			border-radius: 20px;
+		}
+	}
+}
 .tp-brand-slide-element{
 	width: auto;
 	display: inline-block;
@@ -74,4 +86,7 @@ img{
 .tp-slide-transition{
 	-webkit-transition-timing-function: linear;
 	transition-timing-function: linear;
+}
+.tp-upper{
+	text-transform: uppercase;
 }

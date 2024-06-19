@@ -32,6 +32,25 @@
         color: #FFFFFF;
         opacity: 0.5;
     }
+    &-2{
+        & .tpfact{
+            &__icon{
+                & span{
+                    color: var( --tp-body-color);
+                }
+            }
+            &__text{
+                & span{
+                    color: var(--tp-common-black);
+                }
+            }
+            &__title{
+                color: var(--tp-common-black);
+                opacity: 1;
+            }
+        }
+        
+    }
 }
 .cols{
     @media #{$md,$sm} {

@@ -5,6 +5,14 @@
           $(this).css("background-image", "url("+$(this).attr("data-background")+")")
         })
 
+        // popup image 
+        $('.popup-image').magnificPopup({
+          type:'image'
+        });
+        $('.popup-video').magnificPopup({
+          type:'iframe'
+        });
+
         //  Initialize Swiper 
    
           var swiper = new Swiper(".tp-testimonial-active", {

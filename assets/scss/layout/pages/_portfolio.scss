@@ -65,5 +65,43 @@
     }
 }
 
+.tpportfolio{
+    position: relative;
+    &:hover{
+        & .tpportfolio__text{
+            display: block;
+        }
+    }
+    &__thumb{
+        & a{
+            & img{
+                border-radius: 20px;
+            }
+        }
+    }
+    &__text{
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+        display: none;
+    }
+    &__title{
+        & h3{
+            font-size: 30px;
+            background-color: #FFFFFF;
+            padding: 12px 14px;
+            color: var(--tp-common-black);
+            margin-top: 8px;
+        }
+        & span{
+            display: inline-block;
+            font-size: 15px;
+            background-color: #FFFFFF;
+            padding: 9px 20px;
+            color: var(--tp-common-black);
+            text-transform: uppercase;
+        }
+    }
+}
 
 

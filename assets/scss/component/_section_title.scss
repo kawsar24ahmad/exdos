@@ -1,24 +1,57 @@
 @use '../utils' as *;
 
-.tp-section-title {
-	font-size: 60px;
-	@media #{$lg} {
-		font-size: 54px;
-	}
-	@media #{$md} {
-		font-size: 35px;
-	}
-	@media #{$xs} {
-		font-size: 35px;
-	}
-	&-white{
-		color: #fff;
-	}
-	&-wrapper{
-		& br{
-			@media #{$xs} {
-				display: none;
+.tp-section{
+	&-title {
+		font-size: 60px;
+		@media #{$lg} {
+			font-size: 54px;
+		}
+		@media #{$md} {
+			font-size: 35px;
+		}
+		@media #{$xs} {
+			font-size: 35px;
+		}
+		&-white{
+			color: #fff;
+		}
+		&-wrapper{
+			& br{
+				@media #{$xs} {
+					display: none;
+				}
 			}
+		}
+	}
+
+	/* popular service */
+
+position: absolute;
+width: 131px;
+height: 25px;
+left: 903px;
+top: 1060px;
+
+
+
+
+
+
+	&-subtitle{
+		color: #57595C;
+		font-family: 'DM Sans';
+		font-weight: 500;
+		font-size: 15px;
+		text-transform: uppercase;
+		display: block;
+		
+		& cite{
+			width: 10px;
+			height: 10px;
+			border-radius: 30px;
+			background-color: #0057FC;
+			display: inline-block;
+			margin-right: 5px;
 		}
 	}
 }

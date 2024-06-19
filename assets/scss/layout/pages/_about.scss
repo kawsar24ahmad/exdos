@@ -56,3 +56,29 @@
     z-index: 1;
     right: 0;
 }
+.tp-about-content{
+    & ul{
+        &   li{
+            list-style: none;
+            line-height: 40px;
+            margin-bottom: 15px;
+            &  i{
+                font-size: 30px;
+                margin-right: 10px;
+            }
+            &  span{
+                font-size: 30px;
+                display: inline-block;
+                
+            }
+        }
+    }
+}
+.tp-about-circle{
+    right: 185px;
+    top: 0;
+    position: absolute;
+    & img{
+        max-width: inherit;
+    }
+}
