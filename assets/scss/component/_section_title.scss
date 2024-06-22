@@ -53,5 +53,21 @@ top: 1060px;
 			display: inline-block;
 			margin-right: 5px;
 		}
+		&-orange{
+			& cite{
+				background-color: var(--tp-theme-orange);
+			}
+		}
+		&-white{
+			color: #fff;
+		}
+	}
+}
+.tp-section-title-content-white {
+	& p{
+		color: #A3AEC3;
+		& b{
+			color: #fff;
+		}
 	}
 }

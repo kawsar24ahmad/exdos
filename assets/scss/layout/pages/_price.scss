@@ -1,0 +1,56 @@
+@use '../../utils' as *;
+
+.tpprice{
+    border-radius: 20px;
+    &:hover{
+        .tpprice-btn{
+            .tp-btn-orange{
+                background-color: var(--tp-theme-color);
+                & i{
+                    background-color: var(--tp-theme-color);
+                }
+            }
+        }
+    }
+    &__icon{
+        margin-bottom: 20px;
+        & span{
+            font-size: 96px;
+            z-index: 2;
+            position: relative;
+            margin-left: 20px;
+         
+        }
+        &-shape{
+            position: absolute;
+            top: -9px;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    &__price{
+        & h4{
+            font-size: 70px;
+        }
+    }
+    &__title{
+        font-size: 30px;
+        border-bottom: 1px solid #57595C;
+        padding-bottom: 30px;
+        margin-bottom: 27px;
+    }
+    &__features{
+        list-style: none;
+        & li{
+            color: #57595C;
+            margin-bottom: 10px;
+            & i{
+                font-size: 18px;
+                margin-right: 12px;
+            }
+            & span{
+                font-size: 17px;
+            }
+        }
+    }
+}

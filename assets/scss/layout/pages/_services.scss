@@ -2,7 +2,7 @@
 
 .tpservices{
     border: 1px solid #57595C;
-    padding: 50px 40px;
+    padding: 40px 40px;
     margin-right: 0px;
     margin-right: -1px;
     transition: .3s;
@@ -10,10 +10,17 @@
         padding: 50px 20px;
     }
     &__icon{
+        display: inline-flex;
+        font-size: 92px;
+        color: var(--tp-common-black);
         & i {
-            display: inline-flex;
-            font-size: 92px;
-            color: var(--tp-common-black);
+          
+        }
+       
+        &-shape{
+            left: 0;
+            top: -6px;
+            z-index: 1;
         }
     }
     &__title{
@@ -58,6 +65,20 @@
             color: #fff;
         }
     }
+    &-2{
+        margin-top: -1px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        & span{
+            margin-left: 25px;
+            font-size: 56px;
+            display: inline-flex;
+            z-index: 2;
+            position: relative;
+
+        }
+        
+    }
 }
 
 .tp-sv-btn{
@@ -80,7 +101,19 @@
 
    
 }
-
+.tp-sv-btn-2{
+    width: 45px;
+    height: 19px;
+    display: inline-flex;
+    & i{
+        width: 45px;
+        height: 19px;
+        font-size: 45px;
+        &::before{
+            line-height: 19px;
+        }
+    }
+}
 
 
 

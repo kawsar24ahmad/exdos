@@ -24,3 +24,29 @@
         }
     }
 }
+
+// home 3 
+.tp-about-faq{
+    &-item{
+        border-bottom: 1px solid #D9D9D9;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        padding-top: 15px;
+      
+    }
+    &-btn {
+        text-align: left;
+        font-size: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &::after{
+            content: "-";
+        }
+        &.collapsed{
+            &::after{
+                content: "+";
+            }
+        }
+    }
+}

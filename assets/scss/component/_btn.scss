@@ -103,6 +103,14 @@
 	&:hover{
 
 	}
+	&-orange{
+		background-color: var(--tp-theme-orange);
+		& i{
+			
+			background-color: #FFAD8A;
+			
+		}
+	}
 }
 .tp-text-btn{
 	font-size: 18px;
@@ -112,4 +120,12 @@
 		transform: rotate(-45deg);
 		margin-left: 12px;
 	}
+	&-white{
+		color: #A3AEC3;
+	}
 }
+
+
+
+
+

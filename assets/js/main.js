@@ -1,8 +1,13 @@
 (function($){
         "use strict";
 
+        // data bg img 
         $("[data-background]").each(function(){
           $(this).css("background-image", "url("+$(this).attr("data-background")+")")
+        })
+        // data bg color 
+        $("[data-bg-color]").each(function(){
+          $(this).css("background-color", $(this).attr("data-bg-color"))
         })
 
         // popup image 
@@ -46,6 +51,23 @@
             },
             
           });
+          // tp-brand-title-active
+          var swiper = new Swiper(".tp-brand-title-active", {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            centeredSlides: true,
+            loop:true,
+            freemode:true,
+            speed:4000,
+            allowTouchMove:false,
+            autoplay: {
+              delay: 1,
+              disableOnInteraction: true,
+            },
+            
+          });
+
+
           // brand slider bottom
           var swiper = new Swiper(".tp-brand-bottom-active", {
             slidesPerView: 'auto',
