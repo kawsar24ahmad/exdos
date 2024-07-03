@@ -82,19 +82,20 @@
         @media #{$xs} {
             padding-left: 20px;
         }
-        
+          
 
         & a{
             font-size: 25px;
             line-height: 30px;
             display: inline-block;
             margin-right: 20px;
+        
         }
     }
     &-2{
         &:hover{
             & img{
-                filter: blur(2px);
+                filter: blur(1px);
             }
             & .tpteam-thumb .social-icons{
                 display: flex;
@@ -123,6 +124,16 @@
                 border: 1px solid #57595C;
                 border-radius: 20px;
                 z-index: -1;
+                &-4{
+                    position: absolute;
+                    height: 360px;
+                    width: 288px;
+                    left: 10px;
+                    bottom: 10px;
+                    border: 1px solid #57595C;
+                    z-index: -1;
+                    border-radius: 185px    185px   0   0;
+                }
             }
             & .social-icons{
                 display: none;
@@ -157,6 +168,23 @@
             }
         }
     }
+    &-4{
+        &   a{
+            &   img{
+                margin-bottom: 10px;
+            }
+        }
+        &   .tpteam-info{
+            &   h3{
+                margin-top: 30px;
+
+            }
+            &   span{
+                padding: 0;
+
+            }
+        }
+    }
 }
 .tp-team-slider-btn{
     margin-bottom: 20px;
@@ -175,3 +203,13 @@
 }
 
 
+.tpteam-thumb-bg{
+    width: 307px;
+    height: 360px;
+    background-color: #FFE9C9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 185px    185px   0   0;
+}

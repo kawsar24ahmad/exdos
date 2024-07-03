@@ -140,3 +140,41 @@
     }
   
 }
+
+.tpproject-wrapper-4{
+    border-radius: 20px;
+    &  .tpproject-text{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    &   .tpproject-content{
+        padding-top: 30px;
+       
+      
+        &   span{
+            color: #57595C;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+    }
+    &   .tpproject-title{
+        color: #0A0E1A;
+        font-size: 30px;
+        padding: 20px   0;
+        padding-right: 10px;
+    }
+    &:hover{
+        &   .circle-icon-btn{
+            background: var(--tp-theme-orange);
+            border:none;
+            &	i{
+                color: #FFFFFF;
+                
+            }
+        }
+    }
+}
+.tpproject-slider-active{
+    margin-left: -100px;
+    margin-right: -100px;
+}

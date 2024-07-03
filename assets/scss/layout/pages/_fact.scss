@@ -38,6 +38,14 @@
                 & span{
                     color: var( --tp-body-color);
                 }
+                &-2  {
+                    &   span{
+                        i{
+                            font-size: 85px;
+                            color: var(--tp-theme-orange);
+                        }
+                    }
+                }
             }
             &__text{
                 & span{
@@ -51,6 +59,7 @@
         }
         
     }
+   
 }
 .cols{
     @media #{$md,$sm} {

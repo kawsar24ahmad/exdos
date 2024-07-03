@@ -3,3 +3,45 @@
 
 body{
 }
+.tpblog-4{
+     & .tpblog__meta {
+            display: flex;
+            align-items: center;
+            transform: rotate(-90deg); /* Rotate the container 90 degrees to the left */
+            transform-origin: left top; /* Optional: Adjust the origin point of the rotation */
+            position: absolute;
+            bottom: 0;
+            // top: 0;
+            background-color: #FFE4FB;
+            border-radius: 10px;
+        
+            
+            & span{
+                padding: 5px 4px;
+                display: flex;
+                align-items: center;
+               
+                &   i{
+                    width: 45px;
+                    height: 45px;
+                    text-align: center;
+                    line-height: 45px;
+                    background: #fff;
+                    border: 1px  solid  #57595C;
+                    border-radius: 5px;
+                }
+            }
+        
+        }
+        .tpblog__info{
+            &   h3{
+                text-transform:capitalize;
+            }
+        }
+        .tpblog__meta span {
+            margin-right: 10px; /* Adjust the spacing between the elements as needed */
+        }
+        
+}
+
+

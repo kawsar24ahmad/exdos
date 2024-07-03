@@ -1,1 +1,19 @@
 @use '../../utils' as *;
+
+.tp-cta-area{
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.tp-cta-overlay{
+    &::before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: #001743;
+        opacity: 80%;
+        left: 0;
+        top: 0;
+    }
+}

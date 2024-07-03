@@ -6,6 +6,7 @@
 	left: 0;
 	right: 0; 
     z-index: 99;
+   
 }
 .tp-header-area{
     @media #{$xl} {
@@ -209,6 +210,9 @@
             background: #F2DDD1;
             display: block;
             width: 1px;
+            &-2{
+                background-color: #D8B09B;
+            }
         }
           & .tp-header-bar{
             margin-left: 20px;

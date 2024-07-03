@@ -19,3 +19,30 @@
         border-color: var(--tp-body-color);
     }
 }
+.tp-contact-img{
+    min-width: inherit;
+    margin-left: -40px;
+}
+.tpcontact-form-box-4{
+    & input, & textarea{
+       border: 1px solid  var(--tp-body-color);
+       border-radius: 10px;
+       height: 60px;
+       padding: 0   20px;
+
+    }
+    &   .p-relative{
+        &   i{
+            position: absolute;
+            top: 25px;
+            right:22px;
+            font-weight: normal;
+        }
+    }
+    & textarea{
+        height: 160px;
+        padding: 0   20px;
+        padding-top: 20px;
+
+    }
+}

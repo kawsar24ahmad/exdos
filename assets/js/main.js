@@ -9,6 +9,10 @@
         $("[data-bg-color]").each(function(){
           $(this).css("background-color", $(this).attr("data-bg-color"))
         })
+        // data color 
+        $("[data-color]").each(function(){
+          $(this).css("color", $(this).attr("data-color"))
+        })
 
         // popup image 
         $('.popup-image').magnificPopup({
@@ -118,6 +122,64 @@
               1200: {
                 slidesPerView: 4,
               },
+            },
+          });
+          // project slider 
+          var swiper = new Swiper(".tpproject-slider-active", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            keyboard: {
+              enabled: true,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".tp-team-swiper-button-next",
+              prevEl: ".tp-team-swiper-button-prev",
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              576: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              992: {
+                slidesPerView: 3,
+              },
+              1200: {
+                slidesPerView: 4,
+              },
+            },
+          });
+
+          // testomonial  active
+          var swiper_thumb = new Swiper(".tp-testimonial-thumb-active", {
+              loop: false,
+            centeredSlides:true,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesProgress: true,
+          });
+          var swiper_content = new Swiper(".tp-testimonial-content-active", {
+            loop: false,
+            spaceBetween: 10,
+ 
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+              swiper: swiper_thumb,
             },
           });
          

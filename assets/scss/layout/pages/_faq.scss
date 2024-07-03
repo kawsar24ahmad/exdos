@@ -32,7 +32,9 @@
         padding-bottom: 15px;
         margin-bottom: 15px;
         padding-top: 15px;
-      
+      &:first-child{
+        padding-top: 0;
+      }
     }
     &-btn {
         text-align: left;
@@ -48,5 +50,10 @@
                 content: "+";
             }
         }
+    }
+}
+.tp-faq-4-thumb{
+    & img{
+        max-width: inherit;
     }
 }

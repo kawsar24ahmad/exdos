@@ -68,12 +68,19 @@ img{
 	border-radius: 24px;
 }
 .br{
+	&-140{
+		border-radius: 140px;
+	}
+	&-150{
+		border-radius: 150px;
+	}
 	&-15{
 		& img{
 			border-radius: 15px;
 		}
 	}
 	&-20{
+		border-radius: 20px;
 		& img{
 			border-radius: 20px;
 		}
@@ -89,4 +96,9 @@ img{
 }
 .tp-upper{
 	text-transform: uppercase;
+}
+.tp-fns{
+	&-30{
+		font-size: 30px;
+	}
 }
